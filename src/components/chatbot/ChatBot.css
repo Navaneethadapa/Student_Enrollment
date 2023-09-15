@@ -1,0 +1,235 @@
+/* CSS */
+/* .chatBotContainer {
+    width: 50vw;
+    height: 60vh;
+    border: 2px solid black;
+    border-radius: 5px;
+} */
+
+.chatBotContainer {
+    position: absolute;
+    width: 70%;
+    height: 90vh;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid #0c002b; */
+    border-radius: 15px;
+}
+
+.yes-button,
+.no-button {
+    
+ /* Background color */
+    color: black; /* Text color */
+    border: 2px solid rgb(80, 152, 192); /* Remove button border */
+    padding: 7px 20px; /* Padding inside the button */
+    margin: 5px; /* Margin around the button */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.yes-button:hover,
+.no-button:hover {
+    background-color: rgb(80, 152, 192); /* Darker background color on hover */
+}
+
+.chatheader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Changed from align-content to align-items */
+    background-color: rgb(80, 152, 192);
+    border: 1px solid black;
+}
+
+.chatheader>h2 {
+    margin: 0;
+    /* Simplified margin properties */
+    padding: 2%;
+}
+
+.messageconatainer {
+    max-width: 100%;
+    height: 80%;
+    background-color: aliceblue;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Added for Firefox */
+}
+
+.messageconatainer::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome and Safari */
+}
+
+.userchatcontainer {
+    max-width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+
+    /* Center vertically */
+}
+
+.bot-image {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.botimage {
+    display: inline;
+    max-width: 5%;
+    height: 10%;
+    border-radius: 100px;
+}
+
+.user-image {
+    display: inline;
+    max-width: 5%;
+    height: 10%;
+    border-radius: 50px;
+}
+
+.userchatcontainer input {
+    flex: 1;
+    flex-grow: 1;
+    /* Use flex-grow to fill available space */
+    height: 85%;
+    /* border: 1px solid black; */
+    /* border-bottom-left-radius: 50px; */
+    outline: none;
+    font-size: 20px;
+    /* margin: 5px; */
+    padding-left: 30px;
+}
+
+.sendbtn {
+    width: 10%;
+    height: 95%;
+    background-color: rgb(85, 189, 249);
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.sendbtn:hover {
+    width: 10%;
+    height: 95%;
+    background-color: rgb(42, 255, 255);
+    cursor: pointer;
+}
+
+.sendbtn img {
+    width: 25%;
+    transition: all 0.3s;
+}
+
+.message {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    text-align: left;
+    font-size: large;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-message {
+    text-align: right;
+    font-size: large;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.displayed-message {
+    background-color: rgb(80, 152, 192);
+    display: inline-block;
+    /* display: inline; */
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.date-picker {
+    padding: 10px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .chatBotContainer {
+        width: 90vw;
+        min-height: 91vh;
+        border-radius: 10px;
+    }
+
+    .messageconatainer {
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+
+    .sendbtn {
+        border: none;
+        outline: none;
+        height: 30px;
+        font-size: 13px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .sendbtn img {
+        background-color: invert;
+        width: 20px;
+    }
+
+    .displayed-message {
+        background-color: #7975f7;
+        /* display: inline-block; */
+        margin: 1px;
+        padding: 10px;
+        font-size: 13px;
+        /* border-radius: 10px; */
+    }
+
+    .chatheader>h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .userchatcontainer {
+        background-color: transparent;
+        height: 30px !important;
+    }
+
+    .userchatcontainer input {
+        /* height: 30px; */
+        font-size: 13px;
+        outline: none;
+        border-bottom-left-radius: 10px;
+        border: none;
+        background-color: #0c002b;
+        color: #fff;
+        padding: 10px;
+        font-weight: 500;
+    }
+
+    .botimage {
+        display: inline;
+        max-width: 15%;
+        height: 10%;
+        border-radius: 999px;
+    }
+}

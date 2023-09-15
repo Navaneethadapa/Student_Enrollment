@@ -1,0 +1,75 @@
+.Eroll-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(44, 47, 59);
+    background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
+	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(3, 3, 3, 0.05);
+}
+
+.Eroll-page h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.center h1{
+    margin-bottom: 200px;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.Enrollbtn button {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: #0c002b;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.Enrollbtn button:hover {
+    background-color: #bad6ea;
+    color: #0c002b;
+    border: 2px solid #0c002b;
+}
+
+/* 
+.Enrollbtn button {
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 6px;
+    background: #7d2ae8;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.Enrollbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Enrollbtn button:active {
+    transform: scale(0.96);
+
+} */
